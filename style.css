@@ -27,10 +27,20 @@
             list-style: none;
             gap:20px;
             align-items: center;
+            
            
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
         }
         .nav-menu li{
 font-size: 16px;
+text-decoration: none;
+        }
+
+        .nav-menu li:hover{
+font-weight:500;
         }
         .contact-btn {
             background-color: #ff6b35;
@@ -44,6 +54,10 @@ font-size: 16px;
             align-items: center;
             gap: 0.5rem;
             transition: background-color 0.2s ease, transform 0.1s ease;
+            border: none;
+        }
+        .contact-btn:hover{
+             background-color: #f7a080;
         }
 .hero-section{
             
@@ -54,7 +68,7 @@ font-size: 16px;
 .customer-section {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between the avatars and the text box */
+  gap: 10px;
 }
 
 .customer-avatars {
@@ -62,23 +76,23 @@ font-size: 16px;
 }
 
 .avatar {
-  width: 40px; /* Adjust size as needed */
+  width: 40px; 
   height: 40px;
   border-radius: 50%;
-  border: 2px solid white; /* A slight white border for separation */
+  border: 2px solid white; 
   background-size: cover;
   background-position: center;
-  margin-right: -10px; /* Overlap effect */
+  margin-right: -10px; 
 }
-
 .customer-count {
-  background-color: #f0f4f8; /* Light gray background, adjust as needed */
-  color: #333; /* Dark gray text color */
+  background-color: #f0f4f8; 
+  color: #333; 
   padding: 10px 20px;
-  border-radius: 25px; /* Adjust to match the desired pill shape */
-  font-family: sans-serif; /* Use a web-safe font */
-  font-weight: 500; /* Adjust font weight for boldness */
-  white-space: nowrap; /* Prevents text from wrapping */
+  border-radius: 25px; 
+  font-family: Montserrat; 
+  font-weight: 600; 
+  white-space: nowrap; 
+  font-size: 12px;
 }
 .hero-content{
             position: absolute;
@@ -108,6 +122,9 @@ font-size: 16px;
             border-radius: 50px;
             border: none;
         }
+        .cta-button:hover{
+            background-color: #f7a080;
+        }
 
             .product-card {
             display: flex;
@@ -130,6 +147,7 @@ font-size: 16px;
         }
         .main-image {
             width: 550px;
+            height: 550px;
             border-radius: 10px;
             background-color: rgb(219, 219, 211);
             border: 1px solid rgb(179, 169, 85);
@@ -148,8 +166,12 @@ font-size: 16px;
             cursor: pointer;
             border: 2px solid transparent;
         }
-        .thumbnail.active {
+        .thumbnail:hover{
+            border: 2px solid lightgray;
+        }
+        .active-thumbnail {
             background-color: #552302;
+            
         }
         .product-details {
             flex: 1;
@@ -243,14 +265,17 @@ font-size: 16px;
             justify-content: center;
             align-items: center;
         }
+        .add-to-cart-button:hover{
+        background-color: #f7a080;
+        }
         .payment-options {
             display: flex;
             justify-content: space-around;
             gap: 10px;
         }
-        .payment-logo {
-            height: 60px;
-            
+        .payment-options img:hover{
+            border: 2px solid black ;
+            border-radius: 5px;
         }
         .payment-logo.shop {
             filter: none;
